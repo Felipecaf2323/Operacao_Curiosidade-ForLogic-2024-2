@@ -3,6 +3,7 @@
     --roxo-escuro: #6B1BC6;
     --roxo-medio: #8948D0;
     --roxo-claro: #EADAF7;
+    --roxo-background: #F3E4FF;
     --white: #FFF;
     -black: #000;
 }
@@ -17,7 +18,7 @@ body{
 }
 
 .confirm-button{
-    background-color: var(--roxo-medio);
+    background-color: var(--roxo-escuro);
     border-radius: 8px;
     border-style: none;
     color: var(--white);

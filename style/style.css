@@ -1,0 +1,36 @@
+/*Componentes*/
+:root {
+    --roxo-escuro: #6B1BC6;
+    --roxo-medio: #8948D0;
+    --roxo-claro: #EADAF7;
+    --white: #FFF;
+    -black: #000;
+}
+
+body{
+    background-color: var(--white);
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+.confirm-button{
+    background-color: var(--roxo-medio);
+    border-radius: 8px;
+    border-style: none;
+    color: var(--white);
+    padding: 15px;
+}
+
+.collumn{
+    display: flex;
+    flex-direction: column;
+}
+
+.grid-row{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+}

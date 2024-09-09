@@ -18,11 +18,60 @@ body{
 }
 
 .confirm-button{
-    background-color: var(--roxo-escuro);
+    background-color: var(--roxo-medio);
     border-radius: 8px;
     border-style: none;
     color: var(--white);
     padding: 15px;
+}
+
+.choose-button{
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: var(--roxo-escuro);
+    color: var(--white);
+    border-style: none;
+    border-radius: 7px;
+    padding: 18px;
+}
+
+.wait-button{
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: var(--white);
+    color: var(--roxo-escuro);
+    border-style: none;
+    padding: 18px;
+    
+}
+
+
+.user-icon{
+    width: 10vh;
+    height: 10vh;
+}
+
+.tag{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 18px;
+    background-color: var(--roxo-claro);
+    color: var(--roxo-escuro);
+    border-style: hidden;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.under-tag{
+    color: var(--roxo-claro);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .collumn{
@@ -35,3 +84,4 @@ body{
     grid-template-columns: 1fr 1fr;
     gap: 5px;
 }
+

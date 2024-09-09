@@ -7,21 +7,10 @@
         <link rel="stylesheet" href="style/style.css">
         <link rel="shortcut icon" href="assets/image/Onion_slices.svg" type="image">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
         <title>Home - Operação Curiosidade</title>
     </head>
-<body>
+<body class="row">
     
     <nav>
         <div>
@@ -34,131 +23,163 @@
             </div>
             <hr>
             <div>
-                <button class="wait-button"><span class="material-symbols-outlined">add_box</span>Cadastrar Curiosidade</button>
+                <a href="curiosidade.html"><button class="wait-button"><span class="material-symbols-outlined">add_box</span>Cadastrar Curiosidade</button></a>
             </div>
             <hr>
             <div>
                 <a href="cadastro.html"><button class="wait-button"><span class="material-symbols-outlined">user_attributes</span>Meus cadastros</button></a>
             </div>
             <div>
-                <button class="wait-button"><span class="material-symbols-outlined">analytics</span>Relatórios</button>
+                <a href="relatorio.html"><button class="wait-button"><span class="material-symbols-outlined">analytics</span>Relatórios</button></a>
             </div>
             <hr>
+
         </div>
     </nav>
 
     <section>
-        <input type="text" placeholder="Pesquise aqui"><span class="material-symbols-outlined">search</span>
-        <button>Últimos cadastrados</button>
-        <button>Compartilhados por mim</button>
-        <button>Compartilhados comigo</button>
+        <section class="row">
+            <div>
+                <input type="text" placeholder="Pesquise aqui"><span class="material-symbols-outlined">search</span>
+                <div class="row">
+                    <button class="tag">Últimos cadastrados</button>
+                    <button class="not-tag">Compartilhados por mim</button>
+                    <button class="not-tag">Compartilhados comigo</button>
+                </div>
+            </div>
+            <div class="row">
+                <div>
+                    <label class="switch">
+                        <input type="checkbox" id="toggle-switch">
+                        <span class="slider"></span>
+                    </label>
+                    <span class="material-symbols-outlined">notifications</span>
+                </div>
+                <div>
+                    <div class="user-box">
+                        <div class="row">
+                            <img src="assets/image/usuario/felipe.jpg" alt="Ícone do Flipe" style="width: 10vh;height: 10vh;">
+                            <div>
+                                <p>Felipe Seugling</p>
+                                <p>[Administrador]</p>
+                            </div>
+                            <div class="menu-container">
+                                <button class="menu-btn" id="menu-btn">></button>
+                                <div class="menu" id="menu">
+                                    <a href="#">Opção 1</a>
+                                    <a href="#">Opção 2</a>
+                                    <a href="#">Opção 3</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        
+        <section style="background-color: rgb(243, 238, 245);">
+
+            <div class="row">
+                <div>
+                    <div class="row">
+                        <img src="assets/image/usuario/felipe.jpg" alt="Ícone do Felipe" class="user-icon">
+                        <div>
+                            <h3>Felipe Padovani Seugling | <span style="color: var(--roxo-escuro);">@lipe.ps</span></h3>
+                            <p>fpadovani62@gmail.com</p>
+                            <button>Ativo</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <button class="tag"><strong>4</strong>Interesses<span class="material-symbols-outlined">flag</span></button>
+                        <button class="tag"><strong>3</strong>Sentimentos<span class="material-symbols-outlined">heart_plus</span></button>
+                        <button class="tag"><strong>2</strong>Valores<span class="material-symbols-outlined">temp_preferences_eco</span></button>
+                    </div>
+                    <p class="under-tag"> <span class="material-symbols-outlined">calendar_month</span> Criado em 08/09/2024</p>
+                    <p class="under-tag"><span class="material-symbols-outlined">draw</span>Editado recentemente por: @juju.baraldi</p>
+                </div>
+                <div>
+                    <div>
+                        24-00908
+                    </div>
+                    <div>
+                        <span class="material-symbols-outlined">share</span>
+                        <span class="material-symbols-outlined">delete</span>
+                        <span class="material-symbols-outlined">edit</span>
+                    </div>
+                </div>
+            </div>
+    <!-------------------->
+    <div class="row">
+        <div>
+            <div class="row">
+                <img src="assets/image/usuario/marcio.jpg" alt="Ícone do Felipe" class="user-icon">
+                <div>
+                    <h3>Marcio Seugling | <span style="color: var(--roxo-escuro);">@marcao.seugling</span></h3>
+                    <p>marcio@gmail.com</p>
+                    <button>Ativo</button>
+                </div>
+            </div>
+            <div class="row">
+                <button class="tag"><strong>3</strong>Interesses<span class="material-symbols-outlined">flag</span></button>
+                <button class="tag"><strong>5</strong>Sentimentos<span class="material-symbols-outlined">heart_plus</span></button>
+                <button class="tag"><strong>10</strong>Valores<span class="material-symbols-outlined">temp_preferences_eco</span></button>
+            </div>
+            <p class="under-tag"> <span class="material-symbols-outlined">calendar_month</span> Criado em 08/09/2024</p>
+            <p class="under-tag"><span class="material-symbols-outlined">draw</span>Editado recentemente por: @gisa.pado</p>
+        </div>
+        <div>
+            <div>
+                24-00907
+            </div>
+            <div>
+                <span class="material-symbols-outlined">share</span>
+                <span class="material-symbols-outlined">delete</span>
+                <span class="material-symbols-outlined">edit</span>
+            </div>
+        </div>
+    </div>
+    <!-------------------->
+            <div>
+                <div>
+                    <div class="row">
+                        <img src="" alt="">
+                        <div>
+                            <h3>Heloisa Padovani Seugling | <span>@eduzera25.du</span></h3>
+                            <p>duduzera25@gmail.com</p>
+                            <button>Ativo</button>
+                        </div>
+                        24-00907
+                    </div>
+                    <div class="row">
+                        <button>4 Interesses</button>
+                        <button>3 Sentimentos</button>
+                        <button>2 Valores</button>
+                    </div>
+                    <p>Criado em 02/09/2024</p>
+                    <p>Editado recentemente por: @ze.edits</p>
+                </div>
+            </div>
+        </section>
+
     </section>
 
     <section>
-
-        <div class="row">
+        <div class="dash collumn">
             <div>
-                <div class="row">
-                    <img src="assets/image/usuario/felipe.jpg" alt="Ícone do Felipe" class="user-icon">
-                    <div>
-                        <h3>Felipe Padovani Seugling | <span style="color: var(--roxo-escuro);">@lipe.ps</span></h3>
-                        <p>fpadovani62@gmail.com</p>
-                        <button>Ativo</button>
-                    </div>
-                </div>
-                <div class="row">
-                    <button class="tag"><strong>4</strong>Interesses<span class="material-symbols-outlined">flag</span></button>
-                    <button class="tag"><strong>3</strong>Sentimentos<span class="material-symbols-outlined">heart_plus</span></button>
-                    <button class="tag"><strong>2</strong>Valores<span class="material-symbols-outlined">temp_preferences_eco</span></button>
-                </div>
-                <p class="under-tag"> <span class="material-symbols-outlined">calendar_month</span> Criado em 08/09/2024</p>
-                <p class="under-tag"><span class="material-symbols-outlined">draw</span>Editado recentemente por: @juju.baraldi</p>
-            </div>
-            <div>
-                <div>
-                    24-00908
-                </div>
-                <div>
-                    <span class="material-symbols-outlined">share</span>
-                    <span class="material-symbols-outlined">delete</span>
-                    <span class="material-symbols-outlined">edit</span>
-                </div>
-            </div>
-        </div>
-<!-------------------->
-<div class="row">
-    <div>
-        <div class="row">
-            <img src="assets/image/usuario/marcio.jpg" alt="Ícone do Felipe" class="user-icon">
-            <div>
-                <h3>Marcio Seugling | <span style="color: var(--roxo-escuro);">@marcao.seugling</span></h3>
-                <p>marcio@gmail.com</p>
-                <button>Ativo</button>
-            </div>
-        </div>
-        <div class="row">
-            <button class="tag"><strong>3</strong>Interesses<span class="material-symbols-outlined">flag</span></button>
-            <button class="tag"><strong>5</strong>Sentimentos<span class="material-symbols-outlined">heart_plus</span></button>
-            <button class="tag"><strong>10</strong>Valores<span class="material-symbols-outlined">temp_preferences_eco</span></button>
-        </div>
-        <p class="under-tag"> <span class="material-symbols-outlined">calendar_month</span> Criado em 08/09/2024</p>
-        <p class="under-tag"><span class="material-symbols-outlined">draw</span>Editado recentemente por: @gisa.pado</p>
-    </div>
-    <div>
-        <div>
-            24-00907
-        </div>
-        <div>
-            <span class="material-symbols-outlined">share</span>
-            <span class="material-symbols-outlined">delete</span>
-            <span class="material-symbols-outlined">edit</span>
-        </div>
-    </div>
-</div>
-<!-------------------->
-        <div>
-            <div>
-                <div class="row">
-                    <img src="" alt="">
-                    <div>
-                        <h3>Heloisa Padovani Seugling | <span>@eduzera25.du</span></h3>
-                        <p>duduzera25@gmail.com</p>
-                        <button>Ativo</button>
-                    </div>
-                    24-00907
-                </div>
-                <div class="row">
-                    <button>4 Interesses</button>
-                    <button>3 Sentimentos</button>
-                    <button>2 Valores</button>
-                </div>
-                <p>Criado em 02/09/2024</p>
-                <p>Editado recentemente por: @ze.edits</p>
-            </div>
-        </div>
-    </section>
-
-
-
-
-    <section>
-        <div>
-            <div>
-                <p>Total cadastrados</p>
+                <h4>Total cadastrados</h4>
                 <p>26</p>
             </div>
             <div>
-                <p>Cadastros pendentes</p>
+                <h4>Cadastros pendentes</h4>
                 <p>2</p>
             </div>
             <div>
-                <p>Cadastros ativos</p>
+                <h4>Cadastros ativos</h4>
                 <p>24</p>
             </div>
         </div>
     </section>
-
+    <script src="script/botao"></script>
 </body>
 </html>

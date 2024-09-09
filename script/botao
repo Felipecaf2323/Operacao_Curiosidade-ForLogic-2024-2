@@ -1,0 +1,14 @@
+const menuButton = document.getElementById('menu-btn');
+const menu = document.getElementById('menu');
+
+menuButton.addEventListener('click', function() {
+    // Alterna a visibilidade do menu
+    menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+});
+
+// Fecha o menu se o usuário clicar fora dele
+window.addEventListener('click', function(event) {
+    if (event.target !== menuButton && !menu.contains(event.target)) {
+        menu.style.display = 'none';
+    }
+});
